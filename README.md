@@ -1,14 +1,14 @@
-## yum‚ÅMeCab‚ğƒCƒ“ƒXƒg[ƒ‹‚·‚é‚½‚ß‚ÌƒŠƒ|ƒWƒgƒŠ’Ç‰Á
+## yumã§MeCabã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ãŸã‚ã®ãƒªãƒã‚¸ãƒˆãƒªè¿½åŠ 
 `sudo rpm -ivh http://packages.groonga.org/centos/groonga-release-1.1.0-1.noarch.rpm`
 
-## ƒpƒbƒP[ƒWî•ñ‚ÌXV
+## ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸æƒ…å ±ã®æ›´æ–°
 `sudo yum makecache`
 
-## Œ`‘Ô‘f‰ğÍ‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ÌƒCƒ“ƒXƒg[ƒ‹
+## å½¢æ…‹ç´ è§£æã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 `sudo yum install mecab mecab-ipadic mecab-devel`
 
-## ŠO•”ƒ‰ƒCƒuƒ‰ƒŠ‚ÌƒCƒ“ƒXƒg[ƒ‹
+## å¤–éƒ¨ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 `composer install`
 
-## ÀsƒRƒ}ƒ“ƒh
+## å®Ÿè¡Œã‚³ãƒãƒ³ãƒ‰
 `php get.php`
