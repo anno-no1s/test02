@@ -2,35 +2,31 @@
 
 /**************************************************
 
-	2018年1月テスト 問2プログラム
+	2018年月テスト 問2プログラム
 
 **************************************************/
 
 require 'vendor/autoload.php';
 
-use PhpOffice\PhpSpreadsheet\Reader\Xlsx as XlsxReader;
+use meCab\meCab;
 
-$reader = new XlsxReader();
-$spreadsheet = $reader->load('data.xlsx');
-$sheet = $spreadsheet->getSheetByName('students');
-
-$sheet->setCellValue('C3', "名前\t");
-$sheet->setCellValue('I3', '合計点');
-for($i = 4; $i <= 42; $i++){
-    $name = $sheet->getCell('B'.$i) . ' ' . $sheet->getCell('C'.$i);
-    $total = $sheet->getCell('D'.$i)->getCalculatedValue();
-    $total += $sheet->getCell('E'.$i)->getCalculatedValue();
-    $total += $sheet->getCell('F'.$i)->getCalculatedValue();
-    $total += $sheet->getCell('G'.$i)->getCalculatedValue();
-    $total += $sheet->getCell('H'.$i)->getCalculatedValue();
-    $sheet->setCellValue('C'.$i, $name);
-    $sheet->setCellValue('I'.$i, $total);
+$mecab = new meCab();
+$lines = file('./data.txt');
+$result = [];
+foreach ($lines as $line) {
+  $analysis = $mecab->analysis($line);
+  foreach ($analysis as $word) {
+      if ($word->getSpeech() !== '名詞') {
+          continue;
+      }
+      if (!isset($result[$word->getText()])) {
+          $result[$word->getText()] = 0;
+      }
+      $result[$word->getText()]++;
+  }
 }
-$dataArray = $sheet->rangeToArray('C3:I42');
+arsort($result);
 
-foreach($dataArray as $row){
-    foreach($row as $cell){
-        echo $cell." \t";
-    }
-    echo "\n";
+foreach ($result as $word => $count) {
+    echo $word . "\t" . $count . "\n";
 }
