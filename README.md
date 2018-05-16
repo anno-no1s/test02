@@ -1,17 +1,8 @@
-## ŠO•”ƒ‰ƒCƒuƒ‰ƒŠ‚ÌƒCƒ“ƒXƒg[ƒ‹
+## å¤–éƒ¨ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 `npm i`
 
-## twitter‚Ö‚Ìtokenİ’è
-index.jsƒtƒ@ƒCƒ‹“à‚Ì‰º‹L‚Ìƒ\[ƒXƒR[ƒh‚É•K—v‚Èî•ñ‚ğİ’è‚µ‚Ä‚­‚¾‚³‚¢B
-`
-const consumerKey = '';       // CONSUMER_KEY
-const consumerSecret = '';    // CONSUMER_SECRET
-const accessTokenKey = '';    // ACCESS_TOKE
-const accessTokenSecret = ''; // ACCESS_TOKEN_SECRET
-`
-
-## ÀsƒRƒ}ƒ“ƒh
+## å®Ÿè¡Œã‚³ãƒãƒ³ãƒ‰
 `node index.js`
 
-## Œ‹‰Êo—Í
-ƒRƒ“ƒ\[ƒ‹ã‚Éo—Í‚µ‚Ü‚·B
+## çµæœå‡ºåŠ›
+ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ä¸Šã«å‡ºåŠ›ã—ã¾ã™ã€‚
