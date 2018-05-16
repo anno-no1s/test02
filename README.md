@@ -1,14 +1,17 @@
-## yumã§MeCabã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ãŸã‚ã®ãƒªãƒã‚¸ãƒˆãƒªè¿½åŠ 
-`sudo rpm -ivh http://packages.groonga.org/centos/groonga-release-1.1.0-1.noarch.rpm`
+## ŠO•”ƒ‰ƒCƒuƒ‰ƒŠ‚ÌƒCƒ“ƒXƒg[ƒ‹
+`npm i`
 
-## ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸æƒ…å ±ã®æ›´æ–°
-`sudo yum makecache`
+## twitter‚Ö‚Ìtokenİ’è
+index.jsƒtƒ@ƒCƒ‹“à‚Ì‰º‹L‚Ìƒ\[ƒXƒR[ƒh‚É•K—v‚Èî•ñ‚ğİ’è‚µ‚Ä‚­‚¾‚³‚¢B
+`
+const consumerKey = '';       // CONSUMER_KEY
+const consumerSecret = '';    // CONSUMER_SECRET
+const accessTokenKey = '';    // ACCESS_TOKE
+const accessTokenSecret = ''; // ACCESS_TOKEN_SECRET
+`
 
-## å½¢æ…‹ç´ è§£æã®ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
-`sudo yum install mecab mecab-ipadic mecab-devel`
+## ÀsƒRƒ}ƒ“ƒh
+`node index.js`
 
-## å¤–éƒ¨ãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
-`composer install`
-
-## å®Ÿè¡Œã‚³ãƒãƒ³ãƒ‰
-`php get.php`
+## Œ‹‰Êo—Í
+ƒRƒ“ƒ\[ƒ‹ã‚Éo—Í‚µ‚Ü‚·B
