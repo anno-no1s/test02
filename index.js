@@ -21,8 +21,10 @@ function searchLink(searchUrl) {
     {method: 'GET', url: searchUrl, encoding: null},
     function (error, response, body) {
       if (!error && response.statusCode === 200) {
-        const $ = cheerio.load(body);
-        const title = $('title').text().trim();
+        const $ = cheerio.load(body, {
+          decodeEntities: false
+        });
+        const title = $('head').find('title').text();
         console.log('%s   %s', searchUrl, title);
 
         // 指定のドメイン内のリンクのみ対象
