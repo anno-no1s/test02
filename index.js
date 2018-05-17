@@ -24,7 +24,7 @@ function searchLink(searchUrl) {
         const $ = cheerio.load(body, {
           decodeEntities: false
         });
-        const title = $('head').find('title').text();
+        const title = $('head').find('title').text().trim();
         console.log('%s   %s', searchUrl, title);
 
         // 指定のドメイン内のリンクのみ対象
