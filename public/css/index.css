@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+div.field {
+  background-color: #99CC33;
+  margin: 20px 0px;
+  padding: 250px 0px;
+}
+div.mario {
+  position: absolute;
+  z-index: 1;
+  visibility:visible;
+  bottom: 20px;
+  left: 10px;
+}

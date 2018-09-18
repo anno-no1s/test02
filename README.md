@@ -1,8 +1,11 @@
+## vagrantを使用する場合はVagrantfileに以下の設定を追加
+`config.vm.network "forwarded_port", guest: 3000, host: 3000`
+
 ## 外部ライブラリのインストール
-`npm i`
+`npm install`
 
-## 実行コマンド
-`node index.js`
+## サーバー起動
+`node app.js`
 
-## 結果出力
-コンソール上に出力します。
+## ブラウザから下記のURLにアクセス
+`http://localhost:3000/`

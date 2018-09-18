@@ -1,18 +1,24 @@
 {
   "name": "test02",
   "version": "1.0.0",
-  "description": "`sudo rpm -ivh http://packages.groonga.org/centos/groonga-release-1.1.0-1.noarch.rpm`",
-  "main": "index.js",
+  "description": "Running Mario!",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anno-no1s/test02.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "request": "^2.86.0",
-    "url": "^0.11.0",
-    "valid-url": "^1.0.9"
-  }
+  "bugs": {
+    "url": "https://github.com/anno-no1s/test02/issues"
+  },
+  "homepage": "https://github.com/anno-no1s/test02#readme"
 }
