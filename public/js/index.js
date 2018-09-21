@@ -31,14 +31,13 @@ function keyup(event) {
   if (event.keyCode === 37) {
     left = false;
     image.src = "/images/mario_4.png";
-    count = 0;
   }
   // right key
   if (event.keyCode === 39) {
     right = false;
     image.src = "/images/mario_1.png";
-    count = 0;
   }
+  count = 0;
   processing = false;
 }
 
@@ -46,15 +45,14 @@ function display() {
   const fieldWidth = document.querySelector('.field').clientWidth;
   const marioWidth = mario.clientWidth;
   if (left === true) {
+    if (x > 10) {
+      x = x - pv;
+    }
     if (( count % 2 ) === 0) {
       image.src = "/images/mario_6.png";
     } else {
       image.src = "/images/mario_5.png";
     }
-    if (x > 10) {
-      x = x - pv;
-    }
-
   }
   if (right === true) {
     if (x < (fieldWidth - marioWidth)) {
